@@ -1,0 +1,75 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.contenuto-centrato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenuto-centrato:hover h1{
+  font-size: 3rem;
+  color: red;
+}
+
+
+/* posizionando un contenitore come relative i suoi figli, se absolute, si posizionano in relazione alla sue coordinate interne  */
+#sectionrelative{
+  background-color: yellow;
+  min-height: 300px;
+  position: relative;
+  width: 600px;
+  margin-bottom: 40px;
+}
+
+.box{
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border: 1px solid black
+}
+
+.box-fixed{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(102, 0, 255);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.box.primo{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 47, 0);
+}
+.box.secondo{
+  width: 100px;
+  height: 80px;
+  background-color: rgb(102, 0, 255);
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+}
+
+.box.due{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.box.quattro{
+  position: absolute;
+  right:0;
+  bottom: 0;
+}
+
+.box.tre{
+  background-color: green;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
